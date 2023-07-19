@@ -1,10 +1,10 @@
-import NavBar from './NavBar';
-import Home from './Home';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>    {/* <Navbar /> */}
+      {/* <NavBar></NavBar>   */} <NavBar /> 
       <div className="content">
         <Home />
       </div>
