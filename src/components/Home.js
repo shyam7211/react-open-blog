@@ -8,11 +8,6 @@ const Home = () => {
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
 
-    // const handleDelete = (id) => {
-    //     let newBlogs = blogs.filter(blogie => blogie.id !== id)
-    //     setBlogs(newBlogs);
-    // }
-
     useEffect(() => {
         setTimeout(() => {
             fetch('http://localhost:8000/blogs')
@@ -40,9 +35,10 @@ const Home = () => {
         <div className="home">
             <div><strong>{error}</strong></div>
             {isPending && <div> Loading... </div>}
-            {blogs && <BlogList blogs={blogs} title="All Blogs!!" /*handleDelete={handleDelete}*/ />}
+            {blogs && <BlogList blogs={blogs} title="All Blogs!!" />}
             {/* The method below filter's only the required blog example for searching a blog */}
             {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'Person 2')} title="Person 2's Blogs!!" handleDelete={handleDelete} />  */}
+            {/* <BlogList blogs={blogs.filter(blog => blog.author === 'Person 2')} title="Person 2's Blogs!!" handleDelete={handleDelete} />  */}
         </div>
     );
 }
