@@ -1,5 +1,6 @@
 
 import BlogList from "./BlogList";
+import Spinner from "./Spinner";
 import useFetch from "./useFetch";
 
 
@@ -9,7 +10,7 @@ const Home = () => {
     return (
         <div className="home">
             <div><strong>{error}</strong></div>
-            {isPending && <div> Loading... </div>}
+            {isPending && <Spinner />}
             {blogs && <BlogList blogs={blogs} title="All Blogs!!" />}
             {/* The method below filter's only the required blog example for searching a blog */}
             {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'Person 2')} title="Person 2's Blogs!!" handleDelete={handleDelete} />  */}

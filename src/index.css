@@ -55,3 +55,23 @@
 .active{
   color: #f1356d;
 }
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details div{
+  margin: 20px 0px;
+}
+
+.blog-details p {
+  /* Apply margin to push the <p> tag to the right */
+  display: flex;
+  justify-content: flex-end;
+}
