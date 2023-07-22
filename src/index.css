@@ -7,12 +7,14 @@
   color: #333;
 }
 
+
+
 /* Styling for the NavBar Component */
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -31,7 +33,7 @@
   color: #f1356d;
 }
 .content {
-  max-width: 600px;
+  max-width: 650px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -120,4 +122,21 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* For NotFound */
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found h2 {
+  font-size: 30px;
+}
+
+.not-found p {
+  margin: 5px;
+  padding: 8px;
 }

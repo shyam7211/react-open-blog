@@ -8,6 +8,7 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false);
 
     const history = useNavigate();
+    document.body.style.backgroundColor = '#ffff';
 
     const handleSubmit = (e) => {
         e.preventDefault();

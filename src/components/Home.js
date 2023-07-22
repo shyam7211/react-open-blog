@@ -7,6 +7,7 @@ import useFetch from "./useFetch";
 const Home = () => {
     const {data : blogs, isPending, error} = useFetch('http://localhost:8000/blogs'); //data: blogs => pass data from useFetch in name of blogs.
 
+    document.body.style.backgroundColor = '#ffff';
     return (
         <div className="home">
             <div><strong>{error}</strong></div>
